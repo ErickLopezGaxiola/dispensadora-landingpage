@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+// Array con los objetos de tipo de servicio para desplegar dinamicamente
 const services = [
   {
     serviceType: 'Venta',

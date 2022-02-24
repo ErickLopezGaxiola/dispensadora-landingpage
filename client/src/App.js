@@ -5,6 +5,7 @@ import Home from './Sections/Home';
 import Services from './Sections/Services';
 import Contacto from './Sections/Contact';
 
+// Sobreescritura de colores primarios de MUI
 const theme = createTheme({
 palette: {
   primary: {
@@ -16,11 +17,10 @@ palette: {
 }
 });
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router> 
         <div className="App">
           <Layout>
             <Switch>

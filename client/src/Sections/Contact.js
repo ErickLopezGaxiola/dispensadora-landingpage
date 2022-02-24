@@ -5,13 +5,13 @@ import { Container, Box, Typography, Paper, TextField, FormControl, InputLabel, 
 
 const Contacto = () => {
 
-    // Form States
+    // Sates de valores de cuestionarios
   const [name, setName] = useState('');
   const [brand, setBrand] = useState('');
   const [model, setModel] = useState('');
   const [service, setService] = useState('');
 
-    // Form Handler
+    // Handler para enviar valores con axios y resetear los valores
     const handleSubmit = async (e) => {
       e.preventDefault();
         setName('')

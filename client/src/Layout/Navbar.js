@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Box, Typography, AppBar, Menu, MenuItem, Toolbar, IconButton, Button} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+// Objeto de rutas para despegar dinamicamente en el menu
 const routes = [
   {
     pageName: 'Inicio',
@@ -19,6 +20,8 @@ const routes = [
 ]
 
 const Navbar = () => {
+  
+  // State para manejar el valor booleano de el menu para dispositivos moviles
   const [anchorElNav, setAnchorElNav] = useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
